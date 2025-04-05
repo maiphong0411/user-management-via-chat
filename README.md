@@ -72,6 +72,8 @@ Example: I want to create new user named phongdemo
 
 When it is created successfully, it will return the default password and you must change the password at the first login.
 
+![Example](image/result.png)
+
 Check user in local computer:
 ```bash
 dscl . -list /Users | grep phongdemo
