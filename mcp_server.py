@@ -28,7 +28,7 @@ def run_sudo_command(command: list):
     Run a sudo command with the sudo password supplied from .env
     """
     try:
-        command_with_sudo = f'echo {SUDO_PASSWORD} | sudo -S {" ".join(command)}'
+        command_with_sudo = f"echo {SUDO_PASSWORD} | sudo -S {' '.join(command)}"
         subprocess.run(command_with_sudo, shell=True, check=True)
     except subprocess.CalledProcessError as e:
         logging.error(f"❌ Error while executing command: {e}")

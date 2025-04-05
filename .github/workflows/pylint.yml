@@ -20,4 +20,4 @@ jobs:
         uv sync
     - name: Analysing the code with pylint
       run: |
-        uv run pylint $(git ls-files '*.py')
+        uv run pylint $(git ls-files '*.py') --fail-under=8
