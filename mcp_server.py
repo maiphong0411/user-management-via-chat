@@ -1,9 +1,10 @@
-from mcp.server.fastmcp import FastMCP
 import subprocess
 import platform
 import logging
-from dotenv import load_dotenv
 import os
+
+from dotenv import load_dotenv
+from mcp.server.fastmcp import FastMCP
 
 
 # Load environment variables from .env file
