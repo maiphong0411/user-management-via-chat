@@ -10,3 +10,13 @@ dependencies = [
     "pylint>=3.3.6",
     "python-dotenv>=1.1.0",
 ]
+[tool.ruff]
+#https://docs.astral.sh/ruff/rules/#pyflakes-f
+#https://docs.astral.sh/ruff/rules/#error-e
+# Enable the pycodestyle (`E`) and Pyflakes (`F`) rules by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = ["E", "F"]
+# e101: Indentation contains mixed spaces and tabs
+# e501: Line too long ({width} > {limit})
+ignore = ["E501", "E101"]
